@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    /* background-color: green; */
+    
+    
+}
+header{
+    width: 100%;
+    
+
+
+
+}
+.header_nav{
+    max-width: 1200px;
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  20px;
+    gap:10px;
+}
+
+.left_nav{
+    display: flex;
+    gap:150px;
+    align-items: center;
+
+}
+.left_nav .bus_logo img{
+    width: 70px;
+
+
+}
+
+ .center_nav{
+    display: flex;
+    /* margin-left:-300px; */
+    gap:40px;
+    color:black;
+}
+.center_nav div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;;
+}
+
+nav .right_nav{
+    display: flex;
+    gap:30px;
+    
+    
+}
+.right_nav div{
+    display: flex;
+    gap:10px;
+
+
+}
+.right_nav i{
+    font-size: 22px;
+}
+
+.Account{
+    position: relative;
+    cursor: pointer;
+   
+    
+}
+.Account:hover{
+    
+    
+   
+}
+.Account i:nth-of-type(2){
+    font-size: 16px;
+    
+
+
+}
+.Account ul{
+    list-style: none;
+    position: absolute;
+    width: 170px;
+    padding: 10px 0;
+    
+    top:22px;
+    
+    background-color: #fff;
+    /* border:1px solid rgb(112, 109, 109); */
+    border-radius:10px;
+    box-shadow: (gainsboro ,gainsboro,gray,0.5);
+    display: flex;
+    flex-direction: column;
+    gap:215x;
+    display: none;
+}
+
+.Account ul li{
+    padding: 10px;
+    /* background-color: #eee; */
+}
+.Account ul li:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.Account:hover ul{
+    display: block;
+}
+.hero_section{
+    background-image: url(HeroImage.png);
+    background-repeat: round;
+    background-size: cover;
+    background-attachment: local;
+    width: 100%;
+    
+   
+    height: 550px;
+    border:1px solid pink;
+
+}
+.hero_section_content{
+    max-width: 950px;
+    /* background-color: green;; */
+    margin:70px auto;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    
+}
+.hero_section_content h1{
+    text-align: center;
+   
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color:#fff;
+}
+.hero_section_nav{
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+
+   
+}
+.hero_section_nav .a{
+    flex-basis: 25%;
+    border-right:#ccc 1px solid;
+    display: flex;
+    align-items: center;
+    padding: 40px 32px ;
+    gap:10px;
+    font-size: 1.4rem;
+    color:#4a4a4a
+    
+}
+.arrow{
+    position:relative;
+    top:40px;
+    /* border: 1px solid black; */
+    right: 19px;
+    
+    
+
+}
+
+.arrow i{
+    border:1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.arrow i:hover{
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3), 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#search_buses{
+   
+    border-right: none;
+    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+   
+    background-color: #d84e55;
+    color:#fff;
+    padding: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+    
+}
+#search_buses p{
+    width: 100%;
+
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    
+}
+.input{
+    display:flex;
+    position: relative;
+   
+}
+.input label{
+    position: absolute;
+    /* top:-5px; */
+}
+.input input{
+    border-color: transparent;
+    
+    width: 100%;
+    /* caret-color: red; */
+    height: 30px;
+    
+    
+}
+.input input:focus{
+    outline: none;
+}
+.input input:focus ~label{
+    top:-20px;
+    font-size: 16px;
+
+   
+    
+}
+/* treanding offers */
+.trending_offers{
+    max-width: 1200px;
+    background-color: #fff;
+    margin:0 auto;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    margin-top: 150px;
+
+}
+.trending_offers_text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+.trending_offers_text button{
+    padding: 10px 15px;
+    font-size: 22px;
+    background-color: #fff;
+    color:blue;
+    font-weight: 600;
+    border-radius: 20px;
+    border-color:#ccc;
+}
+.trending_offers_text h1{
+    font-weight: 500;
+    color:#3f3d3d;
+}
+.offers_box{
+    /* width: 300px; */
+    width: 100%;
+   
+    display: flex;
+    gap:20px;
+    overflow-x: auto;
+}
+.offer_box{
+    width:300px;
+    flex-shrink: 0;
+    background-image: linear-gradient(71.04deg, rgb(12, 57, 139) -6.92%, rgb(62, 118, 216) 109.43%);
+    padding:10px  20px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.offer_box .box_image img{
+    border-radius: 50%;
+}
+.offer_box .box_content{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.offer_box .box_content h3{
+    
+    font-weight: 100;
+    font-size: 12px;
+    background-color:rgba(255, 255, 255, 0.2);
+    align-self: flex-start;
+    padding: 7px;
+    border-radius: 20px;
+}
+.offer_box .box_content p{
+    line-height: 20px;
+   
+    font-weight: 700;
+    font-size: 17px;
+}
+.offer_box .box_content span{
+    font-size: 12px;
+    font-weight:100 ;
+    color:rgb(219, 214, 214);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.offer_box .box_content_icon{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.offer_box .box_content_icon button{
+    padding: 5px;
+    border:2px dotted #fff;
+    background-color:rgba(255, 255, 255, 0.2);
+    color:#fff;
+}
+
+@media(max-width:800px){
+    .left_nav{
+        gap:100px;
+    }
+    .center_nav{
+        gap:20px;
+    }
+
+}
+@media(max-width:740px){
+    .left_nav{
+        gap:50px;
+    }
+    .center_nav{
+        gap:20px;
+    }
+
+}
+@media(max-width:660px){
+    .header_nav{
+    flex-direction: column;
+    gap:20px;
+    }
+    .left_nav{
+        
+        gap:50px;
+    }
+    .hero_section_nav{
+        
+        align-self: center;
+        /* position: relative;     */
+        flex-direction: column;
+    }
+    .hero_section_nav .a:not(.date){
+        border:none;
+        border-bottom: 1px solid #ccc;
+        
+        
+    }
+    .arrow{
+        top:-20px;
+        left:100px;
+        
+    }
+    .arrow i{
+        transform: rotate(90deg);
+    }
+    #search_buses{
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    
+    
+
+}
+.Refer_earn{
+    max-width: 950px;
+    margin:auto;
+    background: url(https://st.redbus.in/Images/99/webreferal.png);
+    background-repeat: no-repeat;
+    height:90px;
+}
+.cab_bus_train{
+    max-width: 1200px;
+    height:560px ;
+    margin:450px auto 0 auto;
+    display: flex;
+    /* background-color: green; */
+    gap:20px;
+}
+
+.cab_bus_train .left,.right{
+    /* width: 50%; */
+    flex-basis: 50%;
+    /* background-color: yellow; */
+}
+.cab_bus_train h1{
+    font-size: 2.9rem;
+    font-weight: 800;
+    line-height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+.cab_bus_train h1 span{
+    font-weight: 100;
+    color: #373535;
+}
+/* .right{
+    background: (https://s3.rdbuz.com/web/images/homeV2/AboutUs/aboutUsImg.svg);
+} */
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom left;
+}
+.ryde,.redrail{
+    /* background-color: pink; */
+    position: relative;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap:10px;
+    
+
+
+}
+
+
+.left ul{
+    list-style: none;
+    
+}
+.content{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    font-size: 26px;
+    border-bottom: ;
+}
+.cbt_content{
+    padding: 30px 20px;
+    position: absolute;    
+    top:40px;
+    width: 500px;
+    height: 350px;    
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:20px;
+    display: none;
+}
+.cbt_content h3{
+    color:rgb(29, 29, 29);
+    font-size: 21px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.cbt_content ul{
+    margin:20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.cbt_content ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.cbt_content button{
+    /* width: 200px; */
+    padding: 13px 10px; 
+    font-size: 1.2rem;
+    color:#fff;
+    background-color: rgb(216, 78, 85);
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+}
+.cbt_content2{
+    /* display: none; */
+    left:-250px;
+}
+.cbt_content h3,button{
+    margin-top: 20px;
+
+}
+input[type="radio"]{
+    display: none;;
+}
+input[type="radio"]:checked~div{
+    
+    display: block;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
