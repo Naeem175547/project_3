@@ -81,11 +81,7 @@ nav .right_nav{
    
     
 }
-.Account:hover{
-    
-    
-   
-}
+
 .Account i:nth-of-type(2){
     font-size: 16px;
     
@@ -836,7 +832,7 @@ section.faq ul li:first-child{
   display:flex;
   flex-direction:column;
   gap:30px;
-  padding: ;
+ 
 }
 
 .faq_content>div{
@@ -885,9 +881,7 @@ section.faq ul li:first-child{
     transform: rotate(180deg);
     font-size: 20px;
 }
-footer{
 
-}
 footer section{
     max-width: 1200px;
     margin:auto;
