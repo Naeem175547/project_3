@@ -284,6 +284,7 @@ nav .right_nav{
     display: flex;
     gap:20px;
     overflow-x: auto;
+    padding-bottom: 10px;
 }
 .offer_box{
     width:300px;
@@ -298,6 +299,7 @@ nav .right_nav{
 }
 .offer_box .box_image img{
     border-radius: 50%;
+    object-fit: contain;
 }
 .offer_box .box_content{
     display: flex;
@@ -329,7 +331,7 @@ nav .right_nav{
 }
 .offer_box .box_content_icon{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap:20px;
 }
 .offer_box .box_content_icon button{
@@ -338,6 +340,23 @@ nav .right_nav{
     background-color:rgba(255, 255, 255, 0.2);
     color:#fff;
 }
+.offer_box2{
+    background:linear-gradient(to right,rgb(106, 42, 42),rgb(193, 102, 102))
+}
+.offer_box3{
+    background:linear-gradient(to right,rgb(51, 136, 81),rgb(53, 185, 128))
+}
+.offer_box4{
+    background:linear-gradient(to right,rgb(28, 123, 155),rgb(79, 188, 188))
+}
+.offer_box5{
+    background:linear-gradient(to right,rgb(112, 108, 22),rgb(135, 149, 30))
+}
+.offer_box6{
+    background:linear-gradient(to right,rgb(75, 3, 79),rgb(217, 64, 215))
+}
+
+
 
 .Refer_earn{
     max-width: 950px;
@@ -644,6 +663,12 @@ input[type="radio"]:checked~div{
     flex-direction: column;
     gap:10px;
     align-items: center;
+}
+.rtc_nav_box img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+
 }
 .operator{
     max-width: 1200px;
